@@ -10,6 +10,10 @@ engines:
    enabled: true
   fixme:
    enabled: true
+ratings:
+  paths:
+  - js/**
+  - scss/**
 exclude_paths:
 - bower_components/**/*
 - css/**/* 
