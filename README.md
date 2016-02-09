@@ -1,5 +1,7 @@
 # Sapphire Skin for UGSU
 
+[![Code Climate](https://codeclimate.com/repos/56ba619a82af3e00690042ee/badges/580813429b04861a26b2/gpa.svg)](https://codeclimate.com/repos/56ba619a82af3e00690042ee/feed)
+
 ## Requirements
 
 You'll need to have the following items installed before continuing.
