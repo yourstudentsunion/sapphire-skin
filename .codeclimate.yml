@@ -1,0 +1,8 @@
+engines:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+exclude_paths:
+- bower_components/**/*
+- css/**/* 
