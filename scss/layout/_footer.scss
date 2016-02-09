@@ -1,0 +1,33 @@
+footer {
+	
+	text-shadow: none;
+	
+	h1,h2,h3,h4,h5,h6 {text-shadow: none;}
+	
+	margin-top: 30px;
+	padding-top: 30px;
+	font-size: 12px !important;
+	
+	background: #222222;
+	
+	border-bottom: 7px solid #003665;
+	
+	* { color: white; }
+	
+	ul {
+		
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	a:hover {
+		
+		color: white;
+		
+	}
+	
+	p { font-size: 12px; font-weight: bold;}
+	
+	
+}

@@ -1,0 +1,91 @@
+// Shop SCSS Import File
+
+#skin_Sapphire.page_shop,
+#skin_Sapphire.page_store {
+	
+	ul.catalogue_productlist {
+		
+		margin: 0;
+		
+		img {
+			
+			width: auto;
+			height: auto;
+			
+		}
+		
+		li {
+			
+			background: white;
+			width: 25%;
+			height: 300px;
+			
+			margin: 0;
+			padding: 0;
+			
+			
+			
+			a img {
+				
+				
+				
+			}
+			
+		}
+		
+		li:not(:nth-child(4n)){
+			
+			border-right: 1px solid #ccc;
+			
+		}
+		
+	}
+	
+}
+
+@import "components/basket";
+@import "components/product";
+@import "components/checkout";
+
+// Medium ?
+@media only screen and (min-width:40.0625em) and (max-width:64em){
+	
+	#skin_Sapphire.page_shop,
+	#skin_Sapphire.page_store {
+	
+		border-top: 5px solid red;
+		
+		ul.catalogue_productlist {
+			
+			li {
+				
+				width: 50%;
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+@media only screen and (max-width: 40em){
+	
+	#skin_Sapphire.page_shop,
+	#skin_Sapphire.page_store {
+	
+		border-top: 5px solid orange;
+		
+		ul.catalogue_productlist {
+			
+			li {
+				
+				width: 100%;
+				
+			}
+			
+		}
+	
+	}
+	
+}

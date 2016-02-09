@@ -1,0 +1,154 @@
+/* ===============================================================
+	
+							Club Mini Site			
+	
+=============================================================== */
+
+.join,
+.products {
+	
+	h3 {
+		
+		border-bottom: 1px solid #ccc;
+		
+	}
+	
+	.join_list {
+		
+		margin: 0;
+		padding: 0;
+		
+		.product-price {
+			
+			font-weight: bold;
+			display: block;
+			margin: 10px 0;
+			
+		}
+		
+	}
+	
+}
+
+.side_nav {
+	
+	border-right: 1px solid #ddd;
+	
+	.mslwidget {
+		
+		position: relative;
+		margin-bottom: 10px;
+		
+	}
+	
+	.msl_email,
+	.msl_web,
+	.msl_twitter,
+	.msl_facebook {
+		
+		display: block;
+		background: $colour_primary;
+		border-left: 5px solid $colour_accent;
+		text-indent: -9999px;
+		margin: 10px 0;
+	    padding: 5px 0;
+	    
+	    @include border-radius(3px);
+		
+	}
+	
+	.msl_email:after,
+	.msl_web:after,
+	.msl_twitter:after,
+	.msl_facebook:after {
+		
+		display: block;
+		
+		color: white;
+		text-indent: 0;
+		font-weight: bold;
+		font-size: 0.87rem;
+		
+		padding: 5px;
+		
+		position: absolute;
+		top:0;
+		
+		width: 100%;
+		
+	}
+	
+	.msl_email:after 	{ content: "Email";   }
+	.msl_web:after 		{ content: "Website"; }
+	.msl_twitter:after	{ content: "Twitter"; }
+	.msl_facebook:after	{ content: "Facebook"; }
+}
+
+
+
+/* ===============================================================
+	
+							Club List			
+	
+=============================================================== */
+
+.club_list {
+	
+	margin: -1rem !important;
+	
+	.msl-listing-logo img {
+		
+		height: 125px;
+		
+	}
+	
+	ul.msl_organisation_list li {
+		
+		margin: 10px 0;
+		text-align: center;
+		font-weight: bold;
+		
+		
+	}
+	
+	ul.msl_organisation_list {
+		
+	    border-radius: 3px;
+	    padding: 10px;
+	    background: white;
+	    border: 1px solid #ddd;
+		
+	}
+	
+	ul.msl_organisation_list:after {
+		
+		content: "";
+		display: block;
+		clear: both;
+		
+	}
+	
+	.club_listing {
+		
+		min-height: 205px;
+		
+		.msl-listingitem-link { text-align: center; }
+		
+		img {
+		
+			display: block;
+			margin: 0 auto;
+			
+		}
+		
+		-webkit-transition: all 0.5s ease;
+		
+	}
+	
+	.club_listing:hover {
+		
+		background: #eee;
+		
+	}
+	
+}

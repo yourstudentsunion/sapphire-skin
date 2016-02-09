@@ -1,0 +1,362 @@
+/* ====================================================
+	
+				Side Page Navigation
+	
+==================================================== */
+
+.side_nav {
+	
+	// Top Level Navigation List In Sidebar
+	
+	#page-root,
+	a.org_link {
+		
+		padding: 5px 5px 5px 10px;
+		background: $colour_primary;
+		color: white;
+		display: block;
+		font-weight: bold;
+		font-size: 0.8125rem;
+		
+		@include border-radius(3px 3px 0px 0px);
+		
+	}
+	
+	ul.level_1,
+	ul.level_2,
+	ul.level_3 li {
+		
+		list-style: none;
+		
+	}
+	
+	ul.level_1 {
+		
+		a { font-size: 0.8125rem; }
+		
+		list-style: none;
+		
+		margin: 0;
+		
+		border: 1px solid rgba(0,0,0,0.1);
+		
+		list-style: none;
+		background: white;
+		
+		.current {
+			
+			background: rgba(23, 66, 131, 0.1);
+			
+		}
+		
+		li {
+			
+			a {
+			
+				display: block;
+				padding: 5px;	
+				font-weight: bold;
+			
+			}
+						
+		}
+		
+		> li:not(:last-child){
+			
+			border-bottom: 1px solid #ccc;
+			
+		}
+		
+	}
+	
+	ul.level_2 {
+		
+		background: white;
+		margin: 0;		
+		border: 1px solid rgba(0,0,0,0.1);
+		border-top: 2px solid rgba(0,0,0,0.1);
+		border-bottom: 0;
+		border-right:0;
+		border-left: 0;
+
+		list-style: none;
+		
+		li {
+			
+			a {
+				
+				padding: 5px;
+				color: #444;
+				font-weight: normal;
+				display:block;
+				border-bottom: 1px solid rgba(0,0,0,0.2);
+		
+			}
+			
+			.current {
+				
+				color: #444;
+				
+			}
+		
+		}
+		
+		> li:not(:last-child) a{
+			
+			border-bottom: 1px solid rgba(0,0,0,0.2);
+			
+		}
+		
+	}
+	
+	ul.level_3 {
+		
+		border-top: 1px solid rgba(0,0,0,0.1);
+		margin: 0;
+		padding: 0;
+		list-style: circle;
+		list-style-position: inside;
+		
+	}
+	
+}
+
+/* ===============================================================
+	
+	Split Nav					
+	
+=============================================================== */
+
+.sticky {
+	
+	padding: 0;
+	@include border-radius(3px);
+	
+}
+
+/* ===============================================================
+	
+	Dropdowns			
+	
+=============================================================== */
+
+.dropdown {
+	
+	h5 {
+		
+		font-size: 1em;
+		
+	}
+	
+	.back {
+		
+	
+		
+	}
+	
+}
+
+.expanded .name {
+	
+	background: $colour_accent;
+	
+}
+
+.top-bar.expanded .toggle-topbar a {
+	
+	color: white;
+	
+}
+
+.top-bar.expanded .toggle-topbar a span::after {
+	
+	box-shadow: 0 0 0 1px #fff,0 7px 0 1px #fff,0 14px 0 1px #fff;
+	
+}
+
+
+#super_bar .right {
+	
+	input.button:hover {
+		
+		background-color: rgba(0,0,0,0.4);
+		
+	}
+	
+	/* Targets Super Header search bar on each page */
+		
+	/* Targets Both Search Field and Submit */
+	
+	#ctl00_search_txtSearchStr,
+	#ctl00_search_btnSubmit {
+		
+		display: inline;
+		width: auto;
+		vertical-align: middle;
+	
+	}
+	
+	#ctl00_search_txtSearchStr {}
+	
+	#ctl00_search_btnSubmit {
+		
+		    width: 70px;
+			font-size: 80%;
+			margin-right: 15px;
+			border: none;
+		
+	}
+	
+}
+
+/* Target the search filed on mobile. */
+@media only screen and (max-width: 40em) {
+	
+	/*
+	
+	#super_bar .right {
+	
+		padding: 10px;
+	
+	}
+	
+	#ctl00_search_btnSubmit {
+		
+		width: 10%;
+		
+	}
+	
+	#ctl00_search_txtSearchStr {
+		
+		width: 89%;
+		
+	} 
+	
+	*/
+	
+}
+
+.toolbar {
+	
+	background: #002c56;
+	border-top: 1px solid black;
+	color: white !important;
+	
+	
+}
+
+#logo_nav {
+	
+	height: 50px;
+	width: auto;
+	padding: 5px 10px 10px 10px;
+	
+}
+
+.contain-to-grid,
+.top-bar {
+	
+	background: $colour_primary_dark;
+	
+	.top-bar-section {
+		
+		ul li { background: none; }
+		
+		li a {font-weight: bold; }
+		
+	}
+	
+}
+
+.back {
+	
+	padding: 0;
+	background: rgba(0,0,0,0.3);
+	
+}
+
+.center-img {
+	
+	background: url("/assets/site_resources/circle.svg") #f2f2f2 no-repeat center center;
+	min-height: 250px;
+	min-width: 250px;
+	
+	img {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+#msl_admin {
+	
+	ul {
+		
+		/* Adverts Admin */ 	li:nth-child(1){ display: block; }
+		/* Blog Admin */ 		li:nth-child(2){ display: block; }
+		/* Directory Admin */ 	li:nth-child(3){ display: block; }
+		/* Elections Admin */ 	li:nth-child(4){ display: block; }
+		/* Events Admin */ 		li:nth-child(5){ display: block; }
+		/* Adverts Admin */ 	li:nth-child(6){ display: block; }
+		/* Adverts Admin */ 	li:nth-child(7){ display: block; }
+		/* Adverts Admin */ 	li:nth-child(8){ display: block; }
+	
+	}
+	
+}
+
+nav.master {
+	
+	background: #004990;
+	background: url(http://www.yourstudentsunion.com/stylesheet/Saphire/background.jpg) repeat-x center top;
+	background: -moz-linear-gradient(top,  #004990 1%, #00bde5 53%, #f7f7f7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#004990), color-stop(53%,#00bde5), color-stop(100%,#f7f7f7));
+	background: -webkit-linear-gradient(top,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
+	background: -o-linear-gradient(top,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
+	background: -ms-linear-gradient(top,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
+	background: linear-gradient(to bottom,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
+	
+	#core {
+		
+		background: $colour_primary;
+		
+		ul.msl_navbar {
+		
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		
+			li {
+				
+				float: left;
+				margin-right: 5px;
+				
+				a {
+					
+					background: $colour_primary;
+					
+					color: white;
+					font-weight: 600;
+					display: block;
+					font-size: 0.8em;
+					text-transform: uppercase;
+					padding:5px 12px;
+					
+				}
+			}
+			
+		}
+	
+	}
+	
+}
+
+#hero_logo {
+	
+	margin: 50px 0;
+	width: 500px;
+	margin: 0 auto;
+	display: block;
+	
+}

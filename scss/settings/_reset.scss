@@ -1,0 +1,256 @@
+body {
+	
+	background-color: $colour_primary_dark; // Makes the overscroll background colour match the theme
+	font-size: 16px;
+	
+}
+
+#skin_Sapphire { background: #f6f6f6; } // Grey background over the blue theme colour.
+
+svg { max-height: 100%; }
+
+img {
+	
+	max-width: 100%;
+	height: auto;
+	
+}
+
+.clear {
+	
+	content: "";
+	display: block;
+	clear: both;
+	
+}
+
+.label {
+	
+	display: inline-block;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0.22222rem 0.44444rem 0.22222rem;
+    font-size: 0.8rem;
+    background-color: #008CBA;
+    color: #FFFFFF;
+	
+}
+
+.panel {
+	
+	border-style: solid;
+    border-width: 1px;
+    border-color: #d8d8d8;
+    margin-bottom: 1.11111rem;
+    padding: 1.11111rem;
+    background: white;
+    color: #333333;
+	border-radius: 3px;
+
+}
+
+/*
+ * Resets the System Buttons to Foundation Styles
+ *
+ *
+ * Standard Buttons = @extend .root_button;
+ * Small Buttons	= @extend .root_button_small;
+ *
+ *
+ */
+ 
+.root_button {
+	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0;
+	cursor: pointer;
+	font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	padding: 1rem 2rem 1.0625rem 2rem;
+	font-size: 1rem;
+	transition: background-color 300ms ease-out;
+	
+}
+
+.root_button_small {
+	
+	@extend .root_button_small;
+	
+	padding: 0.77778rem 1.55556rem 0.83333rem 1.55556rem;
+	font-size: 0.72222rem;
+	
+}
+
+.blue-button {
+
+	@extend .root_button_small;
+	
+	background-color: #008CBA;
+	border-color: #007095;
+	color: #FFFFFF;
+	
+}
+
+.green-button {
+	
+	@extend .root_button_small;
+	
+	background-color: #43AC6A;
+	border-color: #368a55;
+	color: #FFFFFF;
+	
+}
+
+.gray-button {
+	
+	@extend .root_button_small;
+	
+	background-color: #e7e7e7;
+	border-color: #b9b9b9;
+	color: #333333;
+	
+}
+
+.red-button {
+	
+	@extend .root_button_small;
+	
+	background-color: #f04124;
+	border-color: #cf2a0e;
+	color: #FFFFFF;
+	
+}
+
+.info-button {
+	
+	@extend .root_button_small;
+	
+	background-color: #a0d3e8;
+	border-color: #61b6d9;
+	color: #333333;
+	
+}
+
+.expanded-button {
+	
+	padding-left: 0.88889rem;
+    padding-right: 0.88889rem;
+    width: 100%;
+	
+}
+
+/*
+== Need to Move these to their respective pages sheets
+*/
+
+.msl-idealist { margin-top: 20px; }
+
+input[value="Add to Basket"],
+#ctl00_idealist_btnAddIdea,
+.page_contact-us input#submit {
+	
+	@extend .blue-button;
+		
+}
+
+#ctl00_Main_btnPublish,
+#ctl00_ctl00_Main_AdminPageContent_btnSave {
+	
+	
+	@extend .green-button;
+	
+}
+
+// Red Button (Alert)
+
+#ctl00_Main_btnReset // Edit Page - Reset Content 
+{
+	
+	@extend .red-button;
+	
+	
+}
+
+// Gray Button (Secondary)
+#ctl00_Main_btnSave {
+	
+	@extend .gray-button;
+	
+}
+
+// Info Button (Tertiary) 
+#ctl00_Main_btnStopEditing
+{
+	
+	@extend .info-button;
+	
+	
+}
+
+/* ===============================================================
+	
+						
+	
+=============================================================== */
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='date'],
+input[type="password"],
+textarea {
+  font-size: 16px;
+}
+
+#somethingsomethingdarkside {
+	
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	
+}
+
+#somethingsomethingdarkside:after {
+	
+	position: fixed;
+	bottom: 50px;
+	width: 100%;
+	content: "Never gonna give you up";
+	display: block;
+	background: white;
+	z-index: 10000000;
+	
+}
+
+// Removes Background Images & Padding
+.msl_email,
+.msl_web, 
+.collapse {
+	 	
+	background-image: none;
+	padding: 0px;
+	
+}
+
+// Removes Button Images
+input.button,
+.expand {background-image: none;}
+

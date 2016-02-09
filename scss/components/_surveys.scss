@@ -1,0 +1,80 @@
+// Container for the Navigation Buttons within a Survey
+.form_controls {
+	
+	margin-top: 20px;
+	
+}
+
+/* ===============================================================
+	
+	Survey Button Styles	
+	
+=============================================================== */
+
+// Cancel Button
+#ctl00_survey_btnCancel {
+	
+	@extend .gray-button;
+	
+}
+
+// Next Button
+#ctl00_survey_btnNext,
+#ctl00_survey_btnStart {
+	
+	@extend .blue-button;
+	
+}
+
+// Back Button
+#ctl00_survey_btnBack {
+	
+	@extend .blue-button;
+	
+}
+
+// Finish Button
+#ctl00_survey_btnSubmit {
+	
+	@extend .green-button;
+	
+}
+
+// ReSubmit Button
+#ctl00_survey_btnResubmit {
+	
+	@extend .blue-button;
+	
+}
+
+/* ===============================================================
+	
+	Misc. Survey Elements					
+	
+=============================================================== */
+
+.form_error {
+	
+	@extend .error;
+	
+}
+
+.validationwrapper {
+	
+	margin: 20px 0;
+	
+}
+
+/* ===============================================================
+	
+	Hints and Errors			
+	
+=============================================================== */
+
+.hint-text {
+	
+	// font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0;
+	
+}

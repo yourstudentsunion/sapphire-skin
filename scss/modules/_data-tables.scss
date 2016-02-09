@@ -1,0 +1,68 @@
+.dataTables_length {
+	
+	width: 20%;
+	display: inline-block;
+	
+	select { width: initial; }
+	
+}
+
+.dataTables_filter {
+	
+	display: inline-block;
+	width: 80%;
+	
+}
+
+.dataTables_paginate {
+	
+	position: relative;
+	width: 100%;
+	
+	.next,
+	.previous {
+		
+		display: inline-block;
+		width: 15%;
+		text-align: center;
+		
+	}
+	
+	.next {
+		
+		float: right;
+		@extend .info-button;
+		
+	}
+	
+	.previous {
+
+		float: left;
+		@extend .info-button;
+		
+	}
+	
+	> span {
+		
+		position: absolute;
+		display: block;
+		width: 70%;
+		margin-left: 15%;
+		text-align: center;
+		
+		.current {
+			
+			background: $colour_accent;
+			
+		}
+		
+		a {
+			
+			display: inline-block;
+			@extend .gray-button;
+			
+		}
+		
+	}
+	
+}

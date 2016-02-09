@@ -1,0 +1,88 @@
+/* Sapphire because its blue and shiny */
+
+@import "settings/colour";
+@import "settings/functions";
+@import "settings/type";
+@import "settings/reset";
+
+@import "layout/admin";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "modules/data-tables";
+
+@import "components/adverts";
+@import "components/calender";
+@import "components/comments";
+@import "components/news";
+@import "components/fourms";
+@import "components/notifications";
+@import "components/orbitslider";
+@import "components/shop";
+@import "components/surveys";
+@import "components/polls";
+@import "components/jobs";
+@import "components/feedback";
+
+@import "pages/login";
+@import "pages/homepage";
+@import "pages/eventcalendar";
+@import "pages/student-groups";
+@import "pages/news";
+@import "pages/officers";
+@import "pages/elections";
+
+/* START OF WORKING AREA */
+
+.mobile-only-basket-ui > a {
+		
+	padding-left: 0.9375rem;
+	display: block;
+	font-weight: bold;
+	color: white;
+	height: 2.8125rem;
+	font-size: 0.8125rem;
+	line-height: 2.8125rem;
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 2.8125rem;
+		
+}
+
+#drop2.f-dropdown.content {
+
+	background: none;
+	padding: 0;
+	
+	border: none;
+	
+	left: 0 !important;
+	width: 100% !important;
+}
+
+/* END OF WORKING AREA */
+
+div[data-magellan-expedition="fixed"].fixed {
+	
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+	
+}
+
+/* DEBUG - It's a mystery */
+
+.vp_hint { display: block; } // Form Hints?
+
+/* DEBUG - 100% Height for Login Page */
+
+#aspnetForm { height: 100%;	position: relative; }
+
+/* DEBUG - Random Yellow Box on Product Pages */
+
+#ctl00_Main_ProductCtl1_lblOptionNote { display: none; }
+
+
+/* DEBUG - Feature: Offsite Link Icons */
+
+a[href*="//"]:not([href*="yourstudentsunion.com"]) {}

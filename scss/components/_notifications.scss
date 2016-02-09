@@ -1,0 +1,64 @@
+.msl_notification { padding: 0; }
+
+.alertbox {
+	
+	background: none;
+	background-color: inherit;
+	background-image: none;
+	border: none;
+	margin: 0;
+	padding: 10px;
+	border-radius: 4px;
+	font-weight: bold;
+	border: 1px solid rgba(0,0,0,0.1);
+	
+	a {
+		
+		font-weight: 700;
+		color: rgba(0,0,0,0.4);
+		
+	}
+	
+}
+
+.msl_info {
+	
+	@extend .alertbox;
+	
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	
+}
+
+.msl_warning {
+	
+	@extend .alertbox;
+	
+	color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+	
+}
+
+.confirm {
+	
+	@extend .alertbox;
+	
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	  
+}
+
+.error {
+	
+	@extend .alertbox;
+	
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    
+    > p {margin-bottom: 0;}
+	
+}

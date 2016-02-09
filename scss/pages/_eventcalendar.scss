@@ -1,0 +1,241 @@
+.page_whatson,
+.page_events {
+	
+	
+	.event_sidebar {
+		
+		background: $colour_primary;
+		
+		// Event Listing Sidebar
+		* { color: white; text-shadow: none; }
+		
+		table {
+				
+			background: none;
+			border: none;
+				
+		}
+		
+		.msl_event_calendar_today {
+			
+			color: rgba(255,255,255,0.3);
+			
+		}
+		
+		table.msl_event_calendar_title {
+
+			tbody tr {
+			
+				// Nxt & Prev Month Arrow Keys
+				td:nth-of-type(odd) a {
+					
+					display: block;
+					padding: 6px 0;
+					text-align: center;
+					background: rgba(0,0,0,0.4);
+					border: 1px solid #222;
+					color: white !important;
+					font-weight: bold;
+					
+					-webkit-transition: background 1s ease;
+					
+				}
+				
+				td:nth-of-type(odd) a:hover {
+					
+					background: rgba(0,0,0,0.8);
+					
+				}
+				
+				// Center Month
+				td:nth-of-type(2){
+					
+					font-weight: bold;
+					text-align: center;
+					
+				}
+				
+			}
+			
+		}
+		
+		.msl_event_calendar {
+			
+			padding: 10px;
+			border: 0 !important;
+			
+		}
+		
+		.month,
+		.othermonth {
+			
+			text-align: center;
+			padding: 5px 0;
+			
+		}
+		
+		// Need the !important flag as MSL useing inline styles for the colours.
+		
+		.msl_event_calendar_selected_day {
+			
+			background: rgba(0,0,0,0.1) !important;
+			
+		}
+		
+		.othermonth {
+			
+			background: rgba(0,0,0,0.2) !important;
+			
+		}
+		
+		table tr:nth-of-type(even) {
+			
+			background: none;
+			
+		}
+		
+		h5 {padding-left: 10px;}
+		
+		div.search_options {
+			
+			ul {
+				
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+				li {
+					
+					padding: 5px 10px;
+					cursor: pointer; 
+					cursor: hand;
+					color: white;
+					font-weight: bold;
+				}
+				
+				li.active {
+
+					border-left: 5px solid $colour_accent;
+					padding: 5px 5px;
+					background: $colour_primary_light;
+					border-bottom: 1px solid rgba(0, 178, 226,0.1);
+										
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.event_list {
+		
+		// Main COlumn of Event Threads
+		
+		background:white;
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: 5px;
+		overflow: hidden;
+		
+		.eventlist_day h4 {
+			
+			padding: 10px;
+		    background: #004a8b;
+		    text-shadow: none;
+		    color: white;
+		    font-size: 1em;
+			
+		}
+		
+		.event_item {
+			
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+			
+			.msl_event_name {
+				
+				font-size: 1.1em;
+				
+			}
+			
+			.msl_event_time,
+			.msl_event_location {
+				
+				margin: 0;
+				display: inline-block;
+				font-weight: bold;
+				color: #444;
+				
+			}
+			
+			.msl_event_time {}
+			
+			.msl_event_location {}
+			
+		} 
+		
+		.event_item.itemEven {
+			
+			
+			
+		}
+		
+		// Event Type Tags
+		.msl_event_types {
+			 			
+			color: white; // Hides the divider icons
+			
+			a {
+				
+				@extend .label;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+.event_tickets {
+	
+	font-size: 1em;
+	
+	font-weight: bold;
+	
+	@extend .panel;
+	
+	.event_ticket input {
+	
+		@extend .blue-button;
+		@extend .expanded-button;
+		display: block;
+		margin-bottom: 10px;
+	
+	}
+	
+	.event_ticket select {
+		
+		width: 50%;
+		
+	}
+	
+	.event_ticket:not(:last-child) {
+		
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 10px;
+		
+	}
+	
+}
+
+.datetime {
+	
+	background: white;
+	
+	@extend .panel;
+	
+	border-top: 0;
+	
+	
+}

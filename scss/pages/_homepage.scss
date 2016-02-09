@@ -1,0 +1,207 @@
+//MSL Homepage CSS Class
+.page_root,
+.page_homepage {
+	
+	.center-img {
+		
+		background: url("http://glos-dev.ukmsl.net/stylesheet/Sapphire/su_circle.png") #f2f2f2 no-repeat center center;
+		min-height: 250px;
+		min-width: 250px;
+		
+	}
+	
+	.quick-links,
+	.eventlist,
+	.home-news {
+		
+		background: white;
+		@include border-radius(3px);
+		overflow: hidden;
+
+		
+		h4 {
+			
+			background: $colour_primary;
+			text-shadow: none;
+			font-size: 1em;
+
+			a {
+				
+				color: white;
+				padding: 10px;
+				padding-left: 15px;
+				display: block;
+				
+			}
+			
+		}
+		
+	}
+	
+	/*
+		
+		Need to set the styles here as this is for a non MSL element
+		
+	*/
+	
+	.quick-links {
+		
+		h4 {
+			
+			color: white;
+			padding: 10px;
+			padding-left: 15px;
+			display: block;
+			
+		}
+		
+		ul {
+			
+			list-style: none;
+			margin: 0;
+			
+			
+			li a {
+				
+				padding: 10px;
+				display: block;
+				font-weight: bold;	
+				
+				-webkit-transition: all 0.5s linear;
+				
+			}
+			
+			li a:hover {
+				
+				border-left: 5px solid $colour_primary;
+				
+			}
+			
+			li:not(:last-child) {
+			
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			
+			}
+			
+		}
+		
+	}
+	
+	// UpNext Event List Widget Container
+	.eventlist {
+		
+		.event_item {
+			
+			min-height: 120px;
+			padding: 10px;
+			
+			dl {
+				
+				margin-bottom: 0;
+				
+				dt {
+					
+					margin-bottom: 0;
+					
+				}
+				
+			}
+			
+			dt > a:first-of-type {
+				
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				
+			}
+			
+		}
+		
+		// Adds a bottom border to all but the last item
+		.event_item:not(:last-child) {
+			
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			
+		}
+		
+		.msl_event_description,
+		.msl_event_hook,
+		.msl_event_time {
+			
+			margin-bottom: 0;}
+			
+		.msl_event_location {
+			
+			display: none;
+			
+		}
+		
+	}
+	
+	.home-news {
+		
+		.news_item {
+			
+			min-height: 120px;
+			padding: 10px;
+			
+			p.leader {
+				
+				margin-bottom: 0;
+				
+			}
+			
+		}
+		
+		// Adds a bottom border to all but the last item
+		.news_item:not(:last-child) {
+			
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			
+		}
+		
+	}
+	
+	.button-group.even-2.stack-for-small a {
+		
+		// @include border-radius(3px);
+		font-weight: bold;
+		
+	}
+	
+	.news_all {
+		
+		padding: 10px;
+		color: white;
+		background: $colour_primary;
+		
+		a.msl_edit { background: none; padding: 0; color: #FFF; font-weight: bold; }
+		
+	}
+	
+	/* Animated Timer Element that shows the progress through the homepage sldies 
+	
+	.timer-display {
+	  height: 5px;
+	  content: "";
+	  display:block;
+	  width: 100%;
+	  position: absolute;
+	  bottom: 0;
+	  background: red;
+	  animation-name: slidein;
+	  animation-duration: 7s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: ease-in;
+	  animation-fill-mode: forwards;
+	  animation-delay: 1s;
+	}
+	
+	@-webkit-keyframes slidein {
+	   0%, 10%       { width: 0%; }
+	   90%, 100%     { width: 100%; }
+	}
+	
+	/* */
+	
+}

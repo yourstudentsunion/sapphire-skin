@@ -1,0 +1,28 @@
+.advert {
+	
+	margin: 10px 0;
+	
+	a {
+		
+		display: block;
+		
+		img {
+		
+			width: 100%;
+			height: auto;
+		
+		}
+		
+	}
+	
+	a:before {
+		
+		content: "Advertisment";
+		display: block;
+		font-weight: bold;
+		color: black;
+		font-size: 0.8rem;
+		
+	}
+	
+}

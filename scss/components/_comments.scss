@@ -1,0 +1,125 @@
+.comment_panel {
+	
+	h2 { border-top: 1px solid #cecece; }
+	
+	h2:before {
+		
+		content: "";
+		display: block;
+		height: 1px;
+		border-top: 1px solid white;
+		
+	}
+	
+	#ctl00_Main_comments_upComments > span {
+		
+		margin: 1rem 0;
+		display: block;
+		
+	}
+	
+	.comments,
+	#add_comment {
+		
+		/*
+		 *	Comment Conent
+		 */
+		
+		dd {
+			
+			float: left;
+			width: 80%;
+			margin: 0;
+			border: 0;
+			
+			.comment {
+				
+				padding: 10px 0;
+				
+				textarea {
+					
+					border: 1px solid #ccc;
+					font-size: 100%;
+					padding: 0.5rem;
+					margin: 0 0 1rem 0;
+					
+				}
+				
+				input#ctl00_Main_comments_btnAddComment {
+					
+					@extend .blue-button;
+					
+				}
+				
+			}
+			
+			.comment_details {
+				
+				font-size: 100%;
+				padding: 0;
+				background-color: $colour_primary;
+				
+				h3,
+				span {
+					
+					padding: 10px;
+					font-size: 100%;
+					text-shadow: none;
+					display: block;
+					color: white;
+					font-weight: bold;
+					
+				}
+				
+				span.comment_delete {
+					
+					padding: 0;
+					color: #a94442;
+					background-color: #f2dede;
+					border-color: #ebccd1;
+					top: 0;
+					right: 0;
+					
+					a { padding: 10px; display: block; }
+					
+				}
+				
+			}
+			
+		}
+		
+		/*
+		 *	Person Making the Comment
+		 */
+		
+		dt {
+		
+			width: 20%;
+			float: right;
+			margin: 0;
+			padding: 0;
+			background: none;
+			text-align: right;
+			background-image: none;
+			
+			img.avatar {
+				
+				display: inline-block;
+				margin: 0 auto;
+				width: auto;
+				
+			}
+			
+			a { display: block; }
+			
+		}
+		
+	}
+	
+	.comments:after {
+		
+		@extend .clear;
+		
+	}
+	
+}

@@ -1,0 +1,76 @@
+.page_login {
+
+	padding: 10% 0 30% 0;
+
+	.fill {
+		
+	    background: #f7f7f7;
+	    min-height: 95%;
+	    width: 100%;
+	    overflow: hidden;
+	    position: absolute;
+		
+	}
+
+	img#su_logo {
+			
+			width: 50%;
+			height: auto;
+			margin: 0 25%;
+			
+		}
+	
+	.login_panel { background: white; }
+	
+	.msl-rememberme { display: block; } // Forces buttons onto one line
+	
+	#ctl00_logincontrol1_btnLogin { 	// Main Login Button
+		
+		@extend .blue-button;
+		
+		display: block;
+		width: 50%;
+		margin-bottom: 16px;
+		
+	}
+	
+	.login {
+		
+		a {
+			
+			color: #333;
+			
+		}
+		
+		a:hover {
+			
+			text-decoration: underline;
+			
+		}
+		
+		#ctl00_logincontrol1_lnkForgottenPassword:after {
+			
+			    content: "\25CF";
+				display: inline-block;
+				margin-left: 5px;
+				color: rgba(0,0,0,0.3);
+			
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 40em){
+	
+	.page_login {
+		
+		#ctl00_logincontrol1_btnLogin { // Main Login Button
+			
+			display: block;
+			width: 100%;
+			
+		}
+		
+	}
+	
+}

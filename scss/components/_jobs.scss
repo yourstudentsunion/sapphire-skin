@@ -1,0 +1,98 @@
+.page_jobs {
+	
+	.job_vacancy {
+		
+		@extend .panel;
+		
+		dl {
+			
+			margin-bottom: 0;
+			
+			dt {
+				
+			
+				
+			}
+			
+			dd {
+				
+				
+				
+			}
+			
+			dd:last-of-type {
+				
+				margin-bottom: 0;
+				
+			}
+			
+			dt,dd {
+				
+				
+				
+				
+			}
+			
+			dd:after {
+				
+				
+				
+			}
+			
+		}
+		
+	}
+	
+	.job_search {
+				
+		float: none;
+		width: 100%;
+		
+		@extend .panel;
+		
+		dt,
+		dd,
+		dl {
+			
+			text-align: left;
+			float: none;
+			width: 100%;
+			overflow: visible;	
+			
+		}
+		
+		dt:last-of-type {
+			
+			display: none; /* Hides Empty Element that is messing with the UI */
+			
+		}
+		
+	}
+	
+	#ctl00_Main_btnFilter {
+			
+			@extend .green-button;
+			
+		}
+	
+	#job_list .paging { /* MSL Pagination Targets to override */
+		
+		float: none;
+		width: 100%;
+		margin: 20px 0;
+		text-align: center;
+		
+		a#ctl00_Main_btnNext,
+		a#ctl00_Main_btnNext2,
+		a#ctl00_Main_btnPrev,
+		a#ctl00_Main_btnPrev2 {
+			
+			@extend .blue-button;
+			
+		}
+		
+		
+		
+	}
+	
+}

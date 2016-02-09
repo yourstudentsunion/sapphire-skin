@@ -1,0 +1,74 @@
+.officer-feedback-points {
+
+	.news_item { // Each feedback items from the news widget
+		
+		.news_item_inner {margin: 0;}
+		
+		p.msl_pubdate {
+			padding: 5px;
+			margin-bottom: 0;
+			
+		}
+	
+		h5 { // Feedback Item
+			
+			padding: 5px;
+			width: 80%;
+			display: inline-block;	
+		}
+		
+		p.msl_pubdate {
+			
+			font-weight: bold;
+			float: right;
+			
+		}
+		
+		p.leader {
+			
+			padding: 10px 5px 0 5px;
+			margin: 10px 0 10px 0;
+			border-top: 1px solid rgba(0,0,0,0.1);
+			display: none;
+			margin-bottom: 0;
+			background: white;
+			color: #444;
+			
+		}
+		
+	}
+	
+	.news_item.msltaginprogress,
+	.news_item.msltagchanged,
+	.news_item.msltagnoted {
+		
+		border: 1px solid;
+		@include border-radius(3px);
+		margin-bottom: 10px;
+		
+	}
+	
+	.news_item.msltaginprogress {
+		
+		color: #8a6d3b;
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+		
+	}
+	
+	.news_item.msltagchanged {
+		
+		color: #8a6d3b;
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+		
+	}
+	
+	.news_item.msltagnoted {
+		
+		color: #3c763d;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+		
+	}
+}

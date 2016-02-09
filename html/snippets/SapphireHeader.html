@@ -1,0 +1,258 @@
+<div class="contain-to-grid">
+	
+	<div class="show-for-small-only mobile-only-basket-ui">
+		
+		<a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Basket</a>
+
+		<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+		
+			<div class="basket_dropdown">
+			
+				<MSL:Basket>
+			
+			</div>
+		
+		</div>
+
+	</div>
+
+	<nav class="top-bar" id="super_bar" data-topbar role="navigation" data-options="is_hover: false, mobile_show_parent_link: true">
+		
+		<ul class="title-area has-dropdown">
+		
+			<li class="name"></li>
+		
+			<li class="toggle-topbar menu-icon"><a href="#"><span id="">More</span></a></li>
+		
+		</ul>
+
+		<section class="top-bar-section">
+	
+			<ul class="right">
+				
+				<li class="has-form"><div class="row collapse"><MSL:Search /></div></li>
+				
+			</ul>
+	
+			<ul class="left">
+				
+				<li class="logged-out"><a href="/login/">Login</a></li>
+				
+				<li class="logged-out"><a href="/account/register/students/">Register</a></li>
+				
+				<li class="has-dropdown logged-in">
+						
+					<a href="#">MyUnion</a>
+					<ul class="dropdown">
+					
+						<MSL:UserControlPanel ContainerCSSClass="user_tools" />
+					
+					</ul>
+							
+				</li>
+				
+				<li class="has-dropdown not-click logged-in">
+						
+					<a href="/admin/">Admin</a>
+				
+					<ul class="dropdown">
+					
+						<MSL:Admin ContainerCSSClass="adminpanel" ContainerID="adminid" />
+				
+					</ul>
+				
+				</li>
+				
+				<li class="has-dropdown not-click logged-in">
+	
+					<a href="#">Edit</a>
+					
+					<ul class="dropdown">
+	
+						<MSL:ControlPanel />
+						
+					</ul>
+	
+				</li>
+				
+				<li class="has-dropdown not-click basket_dropdown hide-for-small-only">
+				
+					<a href="#">Basket</a>
+					
+					<ul class="dropdown">
+						
+						<MSL:Basket>
+						
+					</ul>
+				
+				</li>
+	
+			</ul>
+		
+		</section>
+		
+	</nav>
+	
+</div>
+
+<nav class="master">
+
+	<div class="row">
+
+		<div class="column">
+
+			<br />
+	
+			<a href="/"><img src="/stylesheet/Sapphire/su_logo.png" height="100" width="200" alt="Students Union" id="hero_logo" /></a>
+	
+			<br />
+
+		</div>
+
+	</div>
+	
+	<div class="row">
+	
+	<div class="small-12 column">
+
+		<div class="contain-to-grid">
+			
+			<nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false, mobile_show_parent_link: true">
+				
+				<ul class="title-area">
+					
+					<li class="name"></li>
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		
+				</ul>
+		
+				<section class="top-bar-section">
+					
+					<!-- Left Nav Section -->
+					
+					<ul class="left">
+					
+						<li><a href="/">Home</a></li>
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/student-voice">Student Voice</a>
+							<ul class="dropdown">
+							
+								<MSL:Navigation navigation_name="sapphire_student-voice"></MSL:Navigation>
+							
+							</ul>
+							
+						</li>
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/jobs-and-skills">Jobs &amp; Skills</a>
+							<ul class="dropdown">
+							
+								<MSL:Navigation navigation_name="sapphire_skills"></MSL:Navigation>
+							
+							</ul>
+							
+						</li>
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/sport">Sport</a>
+						
+							<ul class="dropdown">
+								
+								<MSL:Navigation navigation_name="sapphire_sport"></MSL:Navigation>
+								
+							</ul>
+								
+						</li>
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/advice">Advice</a>
+							
+							<ul class="dropdown">
+								
+								<MSL:Navigation navigation_name="sapphire_support"></MSL:Navigation>
+								
+							</ul>
+						
+						</li>
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/societies">Societies</a>
+						
+							<ul class="dropdown">
+								
+								<MSL:Navigation navigation_name="sapphire_societies"></MSL:Navigation>
+								
+							</ul>
+							
+						</li>
+						
+						<li class="divider"></li>
+						
+						<li><a href="/news/6013/">News</a></li>
+						
+						<!-- <MSL:Navigation navigation_name="sapphire_news"></MSL:Navigation> -->
+						
+						<li class="divider"></li>
+						
+						<li><a href="/events/6013/">Events</a></li>
+						
+						<!-- <MSL:Navigation navigation_name="sapphire_events"></MSL:Navigation> -->
+						
+						<li class="divider"></li>
+						
+						<li><a href="/feedback">Feedback</a></li>
+						
+						<!-- <MSL:Navigation navigation_name="sapphire_feedback"></MSL:Navigation> -->
+						
+						<li class="divider"></li>
+						
+						<li><a href="/shop">Shop</a></li>
+						
+						<!-- <MSL:Navigation navigation_name="sapphire_shop"></MSL:Navigation> -->
+						
+						<li class="divider"></li>
+						
+						<li class="has-dropdown">
+						
+							<a href="/more">More</a>
+							<ul class="dropdown">
+							
+								<MSL:Navigation navigation_name="sapphire_more"></MSL:Navigation>
+							
+							</ul>
+							
+						</li>
+						
+						 
+					
+					</ul>
+				
+				</section>
+			
+			</nav>
+		
+		</div>
+		
+	</div>
+	
+</div>
+
+</nav>
+
+<br />

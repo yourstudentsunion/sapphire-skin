@@ -1,0 +1,63 @@
+html, html a {
+	
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+	font-weight: bold;
+	margin-top: 0;
+	text-shadow: 0 1px 0 #FFF;
+	
+}
+
+h3,h4,h5,h6 {
+	
+	color: #333;
+	
+	
+}
+
+a {
+	
+	/* 
+	
+		Force A links to stay within container. 
+		From: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ (05/11/15) 
+		
+	*/
+	
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	
+}
+
+code {
+	
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-weight: normal;
+    color: #0a0a0a;
+    background-color: #e6e6e6;
+    border: 1px solid #cacaca;
+    padding: 0.125rem 0.3125rem 0.0625rem;
+	
+}

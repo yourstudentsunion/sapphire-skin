@@ -1,0 +1,50 @@
+#ctl00_Main_gvControls {
+	
+	border: 0;
+    background: none;
+	
+}
+
+.ajax__tab_header * {
+	
+	background: none;
+	
+}
+
+.ajax__tab_hover {
+	
+	background: none !important;
+	
+} 
+
+.ajax__tab_outer {
+	
+	padding: 0px;
+	background: none;
+	height: auto;
+	
+	.ajax__tab_inner {
+		
+		.ajax__tab_tab {
+			
+			height: 21px; // Matches Up with MSL UI Element at 21px.
+			
+		}
+		
+	}
+	
+}
+
+.ajax__tab_xp .ajax__tab_body {
+	
+	border: none;
+	padding: 0;
+	background: none;
+	
+}
+
+.list_controls a { // Sets the Height of the individual Widget Boxes
+	
+	height: 8em;
+	
+}

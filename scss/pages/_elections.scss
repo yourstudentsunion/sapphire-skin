@@ -1,0 +1,130 @@
+//* DEBUG - Testing Conditional Styling for the elections pages 
+
+
+
+#skin_Sapphire.page_elections {
+	
+	/* Testing (Remove first slash to block out all conditional styles)
+	
+	$dark_pink: #e60073;
+	$elections_pink:  #00b2e2;
+	$grey_background: #f6f6f6;
+	$elections_blue: #ff3399;
+	
+	nav.master { 
+		
+		background: #ff3399;
+		background: -moz-linear-gradient(top,  		$elections_blue 50%, 		$grey_background 100%); 
+		background: -webkit-linear-gradient(top,  	$elections_blue 50%,		$grey_background 100%); 
+		background: linear-gradient(to bottom,  	$elections_blue 50%,		$grey_background 100%);
+		
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= $elections_blue, endColorstr=$grey_background,GradientType=0 );
+
+	}
+	
+	.top-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] { border-right: solid 1px rgba(0,0,0,0.3);	}
+	
+	.contain-to-grid, .top-bar, .top-bar-section li:not(.has-form) a:not(.button) {	background: $elections_pink;  }
+	
+	.mslwidget > .election {
+		
+		@extend .panel;
+		
+	}
+	
+	.elections-roles-tab {
+		
+		@media only screen and (min-width: 40.0625em) {
+			
+			.tabs.vertical {
+			
+				max-width: 35%;
+				width: 35%;
+			
+			}
+			
+		}
+		
+		.content {
+			
+			@extend .panel;
+			
+			border-left: 0;
+			
+		}
+		
+	}
+	
+	.side_nav #page-root, 
+	.side_nav a.org_link,
+	.button {
+		
+		background: $elections_pink;
+		
+	}
+	
+	.current {
+		
+		color: $elections_pink;
+		
+	}
+	
+	/* */
+	
+	.elections-panel {
+		
+		@extend .panel;
+		
+		background: #FF3399;
+		border: 1px solid white;
+	}
+	
+	.tabs.whole-page-tab .tab-title {
+		
+		width: 50%;
+		
+	}
+	
+	.tab-title:not(.active){
+		
+		background: #ff3399;
+		
+	}
+	
+	.tabs-content {
+		
+		border-top: 5px solid white;
+		
+	}
+	
+	@media only screen and (min-width: 40.0625em) {
+			
+		.elections-roles-tab .tabs {
+			
+			width: 30%;
+			min-width: 30%;
+			
+		}
+		
+		.tabs-content {
+		
+			padding-right: 15px;	
+			
+		}
+		
+	}
+	
+	.elections-roles-tab {
+			
+		.tabs-content {
+		
+			background: white;
+		
+		}
+		
+	}
+	
+}
+
+
+

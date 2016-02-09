@@ -1,0 +1,72 @@
+/* Override the MSL Control Panel Rendering */
+
+#controlpanel {
+	
+	a {display: block;}
+	
+	h3 {
+		
+		display: none;
+		
+	}
+	
+	li {
+		
+		border-bottom: 0 !important;
+		margin: 0 !important;
+		padding-bottom: 0 !important;
+		
+	}
+	
+	.msl_edit,
+	.msl_add {
+		
+		padding: 0;
+		
+	}
+	
+}
+
+.dropdown h3 {
+	
+	color: white;
+	
+}
+
+.controlpanel {
+	
+	h3 {display: none} // Title Element
+	
+	p { display: none} // Greeting
+	
+	#ctl00_usercontrolpanel_liFriends {display: none}
+}
+
+#ctl00_AdminPanel_lbOrganisations { display: none;}
+
+/*
+==	Admin Toolbar Styles
+*/ 
+
+.msl_admin {
+	
+	background: none;
+}
+
+#msl_admin {
+	
+	h3 { display: none; }
+	
+	h4 { margin: 0 !important; }
+	
+	
+	
+	li {
+		
+		margin: 0 !important;
+		padding: 0 !important;
+		border-top: none !important;
+		
+	}
+	
+}

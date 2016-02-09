@@ -1,0 +1,90 @@
+#forum_post { padding: 0; } // Annoingly Named container of all posts in this thread.
+
+dl.forum_nav {
+	
+	margin: 0;
+	width: 100%;
+	float: none;
+	
+}
+
+.forum_post_nav {
+	
+	float: none;
+	margin-right: 0;
+	width: 100%;
+	margin: 10px 0;
+	
+	.forum_post_next,
+	.forum_post_prev {
+		
+		@extend .gray-button;
+		text-align: center;
+		font-size: 100%;
+		font-weight: bold;
+		
+	}
+	
+	.forum_post_next { float: right;  }
+	.forum_post_prev { float: left; }
+	
+}
+
+.forum_post_nav:after {
+	
+	@extend .clear;
+	
+}
+
+/* Individual Forum Entry */
+.forum_post { 
+	
+	margin-bottom: 10px;
+	
+	.forum_post_author {
+		
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+	.forum_post_content {
+		
+		/* Just need to remove some backgrounds */
+		.forum_post_content1,
+		.forum_post_content2,
+		.post_header,
+		.forum_post_tools_inner,
+		.forum_post_tools { padding: 0; background: none; }
+		
+		.post_header {
+			
+			span.forum_post_subject {
+				
+				display: block;
+				background: $colour_primary;
+				color: white;
+				padding: 10px;
+				
+				@include border-radius(5px 5px 0 0);
+				
+			}
+			
+			span.forum_post_date {
+				
+				display: block;
+				background: white;
+				border: 1px solid #ccc;
+				border-top: 0;
+				padding: 10px;
+				font-size: 100%;
+				
+				@include border-radius(0 0 5px 5px);
+				
+			}
+			
+		}
+		
+	}
+	
+}

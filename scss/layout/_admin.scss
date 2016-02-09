@@ -1,0 +1,197 @@
+/* Toolbar */
+
+div#msl_toolbar ul li a#ctl00_ctl00_Main_AdminPageContent_lnkSiteDesign {
+	
+	padding-left: inherit;
+	border: none;
+	line-height: inherit;
+	height: auto;
+	padding: inherit;
+	
+	@extend .green-button;	
+	
+}
+
+/* Page Tools */
+
+#admin_page_content {
+	
+	#ctl00_Main_btnPublish {
+		
+		@extend .green-button;
+		
+	}
+	
+}
+
+/* General Admin Tools */
+
+/* Site Admin Icon Grid */
+
+#msl_page_admin {
+	
+	padding: 0;
+	
+	ul { width: 100%; }
+	
+	li a {
+	
+		margin: 0;
+		border: 1px solid rgba(0,0,0,0.1);
+		width: 20%;
+		background-color: rgba(0,0,0,0); /* Hacky Clear inherited background (Still need the image) */
+		height: 5.6em;
+		
+	}
+	
+}
+
+/* ===============================================================
+	
+	Control Panel					
+	
+=============================================================== */
+
+/* Override the MSL Control Panel Rendering */
+
+#controlpanel {
+	
+	a {display: block;}
+	
+	h3 {
+		
+		display: none;
+		
+	}
+	
+	li {
+		
+		border-bottom: 0 !important;
+		margin: 0 !important;
+		padding-bottom: 0 !important;
+		
+	}
+	
+	.msl_edit,
+	.msl_add {
+		
+		padding: 0;
+		
+	}
+	
+}
+
+.dropdown h3 {
+	
+	color: white;
+	
+}
+
+.controlpanel {
+	
+	h3 {display: none} // Title Element
+	
+	p { display: none} // Greeting
+	
+	#ctl00_usercontrolpanel_liFriends {display: none}
+}
+
+#ctl00_AdminPanel_lbOrganisations { display: none;}
+
+/*
+==	Admin Toolbar Styles
+*/ 
+
+.msl_admin {
+	
+	background: none;
+}
+
+#msl_admin {
+	
+	h3 { display: none; }
+	
+	h4 { margin: 0 !important; }
+	
+	li {
+		
+		margin: 0 !important;
+		padding: 0 !important;
+		border-top: none !important;
+		
+	}
+	
+}
+
+/* ===============================================================
+	
+			Admin Page Content			
+	
+=============================================================== */
+
+#admin_page_content {
+	
+	max-width: 960px;
+	margin: 0 auto;
+	
+}
+
+.msl_admin_page {
+	
+	padding: 0;
+	
+	textarea {
+		
+		border: 1px solid #ccc;
+		
+		padding: 10px;
+		
+		font-size: 16px;
+		font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", Courier, monospace;
+		
+	}
+	
+	#admin_portal {
+		
+		padding: 0;
+		
+		h2 {
+			
+			margin-top: 0;
+			
+		}
+		
+	}
+	
+}
+
+/*
+==	Page Admin Styles
+*/ 
+
+#page_tree {
+	
+	background-color: white;
+	border: 1px solid rgba(0,0,0,0.1);
+	
+	table {margin-bottom: 0;}
+		
+	table tr td {
+		
+		padding: 0px 10px;
+		
+	}
+	
+	table:after {
+		
+		content: "";
+		display: block;
+		height: 1px;
+		background: rgba(0,0,0,0.1);
+		width: 96.8%;
+		position: absolute;
+		margin-top: -7px;
+		
+	}
+	
+}
