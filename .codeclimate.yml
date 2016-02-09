@@ -14,6 +14,9 @@ engines:
    enabled: true
 ratings:
   paths:
-  - *
+  - "**.css"
+  - "**.js"
+  - "**.scss"
+  - "**.html"
 exclude_paths:
 - bower_components/**/*
