@@ -154,9 +154,16 @@ function sortSportsClubs(){
 	
 }
 
- function isEmpty( el ){
-      return !$.trim(el.html())
-  }
+/**
+ *	
+ * 
+ */		
+
+function isEmpty( el ){
+	
+	return !$.trim(el.html())
+
+}
   
 
 /**
@@ -231,6 +238,11 @@ function goBack() {
     }, 2000); // Run ad block detection 2 seconds after page load
   }; 
 
+/**
+ *	
+ * 
+ */		
+
 function getTimeRemaining(endtime){
 	  var t = Date.parse(endtime) - Date.parse(new Date());
 	  var seconds = Math.floor( (t/1000) % 60 );
@@ -279,10 +291,6 @@ $(document).ready(function(){
 		$(".logged-in").hide();
 	
 	}
-	
-	var deadline = '2016-06-01';
-			
-	console.log(getTimeRemaining(deadline));
 	
 	sortNavigation();
 	sortSportsClubs();

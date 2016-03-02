@@ -1,8 +1,8 @@
-/* ====================================================
-	
-				Side Page Navigation
-	
-==================================================== */
+// ====================================================
+//	
+//				Side Page Navigation
+//	
+// ====================================================
 
 .side_nav {
 	
@@ -18,7 +18,7 @@
 		font-weight: bold;
 		font-size: 0.8125rem;
 		
-		@include border-radius(3px 3px 0px 0px);
+		@include border-radius(3px 3px 0 0);
 		
 	}
 	
@@ -27,7 +27,7 @@
 	ul.level_3 li {
 		
 		list-style: none;
-		
+	
 	}
 	
 	ul.level_1 {
@@ -209,33 +209,6 @@
 	
 }
 
-/* Target the search filed on mobile. */
-@media only screen and (max-width: 40em) {
-	
-	/*
-	
-	#super_bar .right {
-	
-		padding: 10px;
-	
-	}
-	
-	#ctl00_search_btnSubmit {
-		
-		width: 10%;
-		
-	}
-	
-	#ctl00_search_txtSearchStr {
-		
-		width: 89%;
-		
-	} 
-	
-	*/
-	
-}
-
 .toolbar {
 	
 	background: #002c56;
@@ -316,6 +289,8 @@ nav.master {
 	background: -o-linear-gradient(top,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
 	background: -ms-linear-gradient(top,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
 	background: linear-gradient(to bottom,  #004990 1%,#00bde5 53%,#f7f7f7 100%);
+	
+	padding-bottom: 30px;
 	
 	#core {
 		
