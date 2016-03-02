@@ -206,6 +206,7 @@ function reOrderCSSImports(){
  */		
 
 function goBack() {
+	
     window.history.back();
 }
 
@@ -218,7 +219,7 @@ function goBack() {
       var ad = document.querySelector("ins.adsbygoogle");
       
       // If the ads are not loaded, track the event
-      if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
+      if (ad && ad.innerHTML.replace(/\s/g, "").length === 0) {
  
         if (typeof ga !== 'undefined') {
  
@@ -264,7 +265,6 @@ function getTimeRemaining(endtime){
 $(document).ready(function(){
 	
 	console.time("JS"); // Start a Debug Timer for the execute time of all the JS.
-	
 	
 	reOrderCSSImports();
 	
@@ -415,12 +415,12 @@ $(document).ready(function(){
             var newURL = oldURL;
             index = oldURL.indexOf('?');
             
-            if(index == -1){
+            if(index === -1){
 	            
 	            index = oldURL.indexOf('#');
 	            
             }
-            if(index != -1){
+            if(index !== -1){
 	            
 	            newURL = oldURL.substring(0, index);
 	            
@@ -470,7 +470,7 @@ $(document).ready(function(){
 				
 				active_tags = $.grep(active_tags, function(value){
 				
-					return value != remove_value;
+					return value !== remove_value;
 					
 				});
 				
