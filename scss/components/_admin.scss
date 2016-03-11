@@ -1,4 +1,4 @@
-/* Toolbar */
+// Toolbar
 
 div#msl_toolbar ul li a#ctl00_ctl00_Main_AdminPageContent_lnkSiteDesign {
 	
@@ -12,21 +12,21 @@ div#msl_toolbar ul li a#ctl00_ctl00_Main_AdminPageContent_lnkSiteDesign {
 	
 }
 
-/* Page Tools */
+// Page Tools
 
 #admin_page_content {
 	
 	#ctl00_Main_btnPublish {
-		
+
 		@extend .green-button;
 		
 	}
 	
 }
 
-/* General Admin Tools */
+// General Admin Tools
 
-/* Site Admin Icon Grid */
+// Site Admin Icon Grid
 
 #msl_page_admin {
 	
@@ -39,20 +39,28 @@ div#msl_toolbar ul li a#ctl00_ctl00_Main_AdminPageContent_lnkSiteDesign {
 		margin: 0;
 		border: 1px solid rgba(0,0,0,0.1);
 		width: 20%;
-		background-color: rgba(0,0,0,0); /* Hacky Clear inherited background (Still need the image) */
+		background-color: rgba(0,0,0,0); // Hacky Clear inherited background (Still need the image)
 		height: 5.6em;
 		
 	}
 	
 }
 
-/* ===============================================================
-	
-	Control Panel					
-	
-=============================================================== */
+// START Edit Page Controls 
 
-/* Override the MSL Control Panel Rendering */
+#admin_page_content {
+	
+	.list_controls a {
+		
+		height: 7rem;
+		
+	}
+	
+}
+
+// END Edit Page Controls 
+
+// Control Panel Rendering
 
 #controlpanel {
 	

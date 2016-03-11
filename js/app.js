@@ -196,7 +196,7 @@ function reOrderCSSImports(){
 
 	$("head").append($("link[href='/stylesheet/Sapphire/foundation-core.css']"));
 	$("head").append($("link[href='/stylesheet/Sapphire/foundation.css']"));
-	$("head").append($("link[href='/stylesheet/Sapphire/main.css']"));
+	$("#aspnetForm").before($("link[href='/stylesheet/Sapphire/main.css']"));
 	
 }
 
@@ -240,22 +240,23 @@ function goBack() {
   }; 
 
 /**
- *	
+ *	Returns time remaining until date.
  * 
  */		
 
 function getTimeRemaining(endtime){
-	  var t = Date.parse(endtime) - Date.parse(new Date());
-	  var seconds = Math.floor( (t/1000) % 60 );
-	  var minutes = Math.floor( (t/1000/60) % 60 );
-	  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-	  var days = Math.floor( t/(1000*60*60*24) );
-	  
-	  var string = "Only " + days + " days to go until the new SU website is launched!";
-	  
-	  return string 
 	
-	}
+	var t = Date.parse(endtime) - Date.parse(new Date());
+	var seconds = Math.floor( (t/1000) % 60 );
+	var minutes = Math.floor( (t/1000/60) % 60 );
+	var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	var days = Math.floor( t/(1000*60*60*24) );
+	
+	var string = days + ", " + hours;
+	
+	return string;
+
+}
 
 /**
  *	Core Onload Function
@@ -269,7 +270,6 @@ $(document).ready(function(){
 	reOrderCSSImports();
 	
 	/*  Functions that apply to all site pages */
-	
 	
 	$(document).foundation({
 		"magellan-expedition": {

@@ -5,12 +5,12 @@
 @import "settings/type";
 @import "settings/reset";
 
-@import "layout/admin";
 @import "layout/navigation";
 @import "layout/footer";
 
 @import "modules/data-tables";
 
+@import "components/admin";
 @import "components/adverts";
 @import "components/calender";
 @import "components/comments";
